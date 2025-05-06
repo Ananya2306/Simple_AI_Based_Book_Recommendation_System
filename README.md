@@ -1,47 +1,57 @@
-# IBM Project
+# IBM Mini Project
 
 ## Overview
-Provide a brief description of your project. Include the purpose, goals, and any relevant context.
+This project is a console-based book recommendation system that suggests similar books based on the user’s input. It uses Natural Language Processing (NLP) techniques like TF-IDF vectorization and cosine similarity on the Goodbooks-10k dataset to generate content-based recommendations.
 
 ## Features
-- List the key features of your project.
-- Highlight what makes it unique or useful.
+- Content-based filtering using book titles
+- Uses TF-IDF for text vectorization
+- Computes cosine similarity between book vectors
+- Console-based interface (can be extended to web later)
+- Simple and easy to understand Python implementation
+- 
+## Project Structure
+```
+AI_Book_Recommender/
+├── app.py              # Main file for running the system
+├── data/
+│   └── books.csv       # Dataset file (from goodbooks-10k)
+├── README.md           # Project documentation
+```
 
-## Installation
-1. Clone the repository:
-    ```bash
-    git clone <repository-url>
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd <project-directory>
-    ```
-3. Install dependencies:
-    ```bash
-    npm install
-    ```
+## Dependencies
+Install the required libraries using pip:
+```
+pip install pandas scikit-learn
+```
 
-## Usage
-Explain how to use your project. Provide examples or commands if applicable.
+## How to Run
+Clone the repository or download the files.
+Place the dataset (books.csv) inside the data/ folder.
+Run the project using:
+```
+python app.py
+```
+Enter a book title when prompted to get recommendations.
 
-## Contributing
-1. Fork the repository.
-2. Create a new branch:
-    ```bash
-    git checkout -b feature-name
-    ```
-3. Commit your changes:
-    ```bash
-    git commit -m "Description of changes"
-    ```
-4. Push to the branch:
-    ```bash
-    git push origin feature-name
-    ```
-5. Open a pull request.
+## Dataset
+Name: Goodbooks-10k
+Contains: 10,000 book titles and user ratings
+Format: CSV
 
-## License
+## Algorithms Used
+TF-IDF (Term Frequency–Inverse Document Frequency): Converts text data into numerical vectors
+Cosine Similarity: Measures similarity between book title vectors
+Content-Based Filtering: Recommends similar items to the one the user likes
+
+## Future Scope
+Add GUI using Streamlit or Flask
+Integrate collaborative filtering based on user ratings
+Deploy as a web application
+Add filtering by author, genre, or publication year
 Specify the license under which your project is distributed.
 
-## Contact
-Provide your contact information or links to relevant profiles (e.g., LinkedIn, GitHub).
+## Contributors
+Ananya
+
+Harsh Raj
